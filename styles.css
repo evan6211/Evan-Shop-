@@ -1,0 +1,119 @@
+html, body {
+    height: 100%;
+}
+
+.container {
+    flex: 1;
+}
+
+
+/* ✅ Navbar mirip Shopee */
+.navbar {
+    background-color: #EE4D2D !important; /* Warna Shopee */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFD100 !important; /* Warna hover kuning */
+}
+.navbar {
+    margin-top: 0 !important;
+    padding: 10px 15px;
+}
+/* ✅ Perbaiki ukuran gambar Carousel */
+.carousel-item img {
+    width: 100%;
+    max-height: 400px; /* Batasi tinggi agar tidak terlalu besar */
+    object-fit: contain; /* Agar gambar tidak terpotong */
+    background-color: white; /* Tambahkan latar belakang */
+}
+
+/* ✅ Warna tombol seperti Shopee */
+.btn-primary {
+    background-color: #EE4D2D !important;
+    border-color: #EE4D2D !important;
+}
+
+.btn-primary:hover {
+    background-color: #D9391E !important;
+    border-color: #D9391E !important;
+}
+
+/* ✅ Footer agar mirip Shopee */
+footer {
+    background-color: #EE4D2D;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0;
+}
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+/* Styling untuk Search Bar dan Filter */
+.card.p-3 {
+    border-radius: 10px;
+    background-color: #fff3e0; /* Warna mirip Shopee */
+}
+
+input.form-control, select.form-control {
+    border-radius: 5px;
+    border: 2px solid #ff5722;
+}
+
+input.form-control:focus, select.form-control:focus {
+    border-color: #e64a19;
+    box-shadow: 0 0 5px rgba(230, 74, 25, 0.5);
+}
+
+/* Tampilan lebih menarik untuk produk */
+.card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* Buat body memenuhi tinggi layar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Atur Flexbox pada body */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Bagian konten utama (Navbar, Tentang, atau Kontak) */
+.content {
+    flex: 1; /* Isi semua ruang yang tersedia */
+    padding: 20px;
+    background-color: #f7f7f7; /* Warna background halaman */
+}
+
+/* Footer agar selalu di bawah */
+.footer {
+    background-color: #212529;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}

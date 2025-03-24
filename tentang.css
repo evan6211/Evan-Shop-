@@ -1,0 +1,49 @@
+/* Hero Section */
+.hero {
+    background: linear-gradient(145deg, #007bff, #6610f2);
+    height: 60vh;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Animasi Hero */
+.animate-fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* Text Justify */
+.text-justify {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* Hover Effect Navbar */
+.nav-link {
+    transition: 0.3s;
+}
+.nav-link:hover {
+    background-color: #007bff;
+    border-radius: 10px;
+    color: white;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+}

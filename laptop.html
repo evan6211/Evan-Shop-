@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        body { 
+          background-color: #f5f5f5;
+          display: flex;
+          flex-direction: column;
+          }
+        .container { margin-top: 35px; }
+        .product-img { width: 100%; border-radius: 8px; }
+        .product-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+        .price { font-size: 24px; font-weight: bold; color: #d0021b; }
+        .btn-buy {
+    background-color: #ff5722;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-buy:hover {
+    background-color: #e64a19;
+}
+    </style>
+</head>
+<body>
+
+     <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">EVAN SHOP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Produk.html">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Detail Produk -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="laptop.jpg" class="product-img" alt="Produk 2">
+            </div>
+            <div class="col-md-7">
+                <div class="product-card">
+                    <h2>Lenovo IdeaPad Slim 5</h2>
+                    <p class="price">Rp11.300.000</p>
+                    <p>Spesifikasi :
+<br>
+Processor : AMD Ryzen™ 7 7730U (8C / 16T, 2.0 / 4.5GHz, 4MB L2 / 16MB L3)
+<br>Display : 14″ WUXGA (1920×1200) OLED 400nits Glossy, 100% DCI-P3, TÜV Low Blue Light, DisplayHDR™ True Black 500
+<br>Memory : 16GB Soldered DDR4-3200, not upgradable
+<br>Storage : 512GB SSD M.2 2242 PCIe® 4.0×4 NVMe®
+<br>Graphics : Integrated AMD Radeon™ Graphics
+<br>Keyboard : Backlit, English
+Wireless : Wi-Fi® 6E, 11ax 2×2 + BT5.2
+<br>Ports : 1x USB 3.2 Gen 1; 1x USB 3.2 Gen 1 (Always On); 2x USB-C® 3.2 Gen 1 (support data transfer, Power Delivery 3.0 and DisplayPort™ 1.4); 1x HDMI® 1.4b; 1x microSD card reader; 1x Headphone / microphone combo jack (3.5mm)
+<br>Camera : FHD 1080p + IR with Privacy Shutter, ToF Sensor
+<br>Audio : Stereo speakers, 2W x2, optimized with Dolby® Audio™
+<br>Battery : Integrated 56.6Wh, 65W USB-C® (3-pin)
+<br>Free : Bagpack Lenovo
+<br>OS : Windows® 11 Home + Office Home & Student 2021
+<br>Garansi Resmi Lenovo 2Y Premium Care + (2Y ADP</p>
+                                        <!-- Tombol Beli Sekarang -->
+<button class="btn btn-buy" data-bs-toggle="modal" data-bs-target="#modalBelumAda">Beli Sekarang</button>
+
+<!-- Modal Bootstrap -->
+<div class="modal fade" id="modalBelumAda" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Informasi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Maaf, produk masih belum ada.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-white mt-5" style="background-color: #222;">
+        <div class="py-3">© 2025 Evan shop | Hak Cipta Dilindungi</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
